@@ -14,9 +14,9 @@ name: tic
 
 jobs:
   all:
-    runs-on: ${{ matrix.os }} (${{ matrix.r }})
+    runs-on: ${{ matrix.os }}
 
-    name: ${{ matrix.os }} (${{ matrix.r }})
+    name: ${{ matrix.os }} (${{ matrix.r }}) ${{ matrix.dev_versions }}
 
     strategy:
       fail-fast: false
@@ -30,7 +30,7 @@ jobs:
             latex: true
           - r: "devel"
             os: macos-latest
-          - r: "4.0"
+          - r: "release"
             os: ubuntu-latest
             dev_versions: true
 
