@@ -2,7 +2,7 @@
 ## revision date: 2020-06-14
 on:
   push:
-    branches-ignore:
+    branches:
       - master
   pull_request:
   # for now, CRON jobs only run on the default branch of the repo (i.e. usually on master)
@@ -30,6 +30,8 @@ jobs:
             latex: true
           - os: [macos-latest]
             r: "devel"
+          - os: [ubuntu-latest]
+            r: ["3.5", "3.4", "3.3", "3.2"]
           - os: [ubuntu-latest]
             r: ["release"]
             dev_versions: true
