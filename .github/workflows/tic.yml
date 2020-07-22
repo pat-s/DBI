@@ -26,12 +26,10 @@ jobs:
         include:
           - r: "release"
             os: macos-latest
-            pkgdown: true
+            pkgdown: false
             latex: true
           - r: "devel"
             os: macos-latest
-          - r: [3.5, 3.4, 3.3, 3.2]
-            os: ubuntu-latest
           - r: "release"
             os: ubuntu-latest
             dev_versions: true
