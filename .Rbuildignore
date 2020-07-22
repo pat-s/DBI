@@ -33,3 +33,4 @@ inst\/doc\/DBI\.b..$
 ^LICENSE\.md$
 ^README\.Rmd$
 ^appveyor\.yml$
+^\.ccache$
