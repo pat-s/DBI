@@ -24,14 +24,16 @@ jobs:
         os: [windows-latest, ubuntu-latest]
         r: ["release"]
         include:
-          - os: [macos-latest]
-            r: "release"
+          - r: "release"
+            os: [macos-latest]
             pkgdown: true
             latex: true
-          - os: [macos-latest]
-            r: "devel"
-          - os: [ubuntu-latest]
-            r: ["release"]
+          - r: "devel"
+            os: [macos-latest]
+          - r: ["3.5"]
+            os: [ubuntu-latest]
+          - r: ["release"]
+            os: [ubuntu-latest]
             dev_versions: true
 
     env:
