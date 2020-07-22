@@ -30,7 +30,7 @@ jobs:
             latex: true
           - r: "devel"
             os: macos-latest
-          - r: "3.5"
+          - r: [3.5, 3.4, 3.3, 3.2]
             os: ubuntu-latest
           - r: "release"
             os: ubuntu-latest
