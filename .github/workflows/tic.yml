@@ -28,11 +28,12 @@ jobs:
             os: [macos-latest]
             pkgdown: true
             latex: true
+            name: "pkgdown"
           - r: "devel"
             os: [macos-latest]
-          - r: ["3.5"]
+          - r: "3.5"
             os: [ubuntu-latest]
-          - r: ["release"]
+          - r: "release"
             os: [ubuntu-latest]
             dev_versions: true
 
